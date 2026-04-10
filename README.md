@@ -177,78 +177,27 @@ Patches: [MorpheApp/patches-1.22.0.mpp](https://github.com/MorpheApp/morphe-patc
 **Other builds:**
 
 <details>
-<summary id="YouTube-Morphe">&emsp;<a href="../../releases/download/45/youtube-morpheapp-v20.45.36-arm64-v8a.apk"><img src="https://img.shields.io/badge/Morphe-v20.45.36-gray?labelColor=FF0000&logo=YouTube&logoColor=white"></a></summary>
+<summary id="YouTube-Morphe">&emsp;<a href="../../releases/download/1/youtube-morphe-v20.45.36-arm64-v8a.apk"><img src="https://img.shields.io/badge/Morphe-v20.45.36-gray?labelColor=FF0000&logo=YouTube&logoColor=white"></a></summary>
 
 Other variants:      
 [arm-v7a.apk](../../releases/download/37/youtube-morpheapp-v20.45.36-arm-v7a.apk) • [arm64-v8a.zip](../../releases/download/45/youtube-morpheapp-module-v20.45.36-arm64-v8a.zip) • [arm-v7a.zip](../../releases/download/37/youtube-morpheapp-module-v20.45.36-arm-v7a.zip)
 <blockquote>
 
-[Release 2026-04-09](../../releases/tag/45)<br>
-Patches: [MorpheApp/patches-1.22.0.mpp](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.22.0)
-- Alternative thumbnails
-- Ambient mode
+[Release 2026-04-10](../../releases/tag/1)<br>
+Patches: [MorpheApp/patches-1.23.0.mpp](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.23.0)
 - Bypass URL redirects
-- Bypass image region restrictions
-- Captions
-- Change form factor
-- Change header
-- Change start page
-- Check watch history domain name resolution
-- Copy video URL
-- Custom branding
-- Custom player overlay opacity
-- Disable DRC audio
-- Disable QUIC protocol
 - Disable Shorts resuming on startup
-- Disable double tap actions
 - Disable haptic feedback
-- Disable layout updates
-- Disable player popup panels
-- Disable rolling number animations
-- Disable sign in to TV popup
-- Disable video codecs
-- Double tap to seek
-- Downloads
-- Enable debugging
-- Exit fullscreen mode
 - Force original audio
 - GmsCore support
-- Hide Shorts components
 - Hide ads
-- Hide autoplay preview
-- Hide end screen cards
-- Hide end screen suggested video
-- Hide info cards
-- Hide layout components
-- Hide player flyout menu components
-- Hide player overlay buttons
-- Hide related video overlay
-- Hide related videos
-- Hide timestamp
-- Hide video action buttons
-- Loop video
-- Miniplayer
-- Navigation bar
-- Open Shorts in regular player
-- Open links externally
-- Open system share sheet
-- Open videos fullscreen
-- Override YouTube Music actions
-- Playback speed
 - Remove background playback restrictions
-- Remove viewer discretion dialog
-- Return YouTube Dislike
 - Sanitize sharing links
-- Seekbar
-- Shorts autoplay
 - SponsorBlock
-- Spoof app version
-- Spoof device dimensions
-- Swipe controls
+- Spoof video streams
 - Theme
 - Video ads
 - Video quality
-- Reload video
 </blockquote>
 </details>
 
