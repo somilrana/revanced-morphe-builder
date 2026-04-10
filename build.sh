@@ -106,7 +106,7 @@ for table_name in $(toml_get_table_names); do
 		if ! isoneof "${app_args[build_mode]}" both apk module; then
 			abort "ERROR: build-mode '${app_args[build_mode]}' is not a valid option for '${table_name}': only 'both', 'apk' or 'module' is allowed"
 		fi
-	} || app_args[build_mode]=both
+	} || app_args[build_mode]=apk
 
 	for dl_from in "${DL_SRCS[@]}"; do
 		if app_args[${dl_from}_dlurl]=$(toml_get "$t" "${dl_from}-dlurl"); then
