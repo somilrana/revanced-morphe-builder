@@ -1,246 +1,123 @@
-enable-module-update = true # set this to false if you do not want to receive updates for the module
+enable-module-update = false # set this to false if you do not want to receive updates for the module
 parallel-jobs = 1
 # see https://github.com/nvbangg/revanced-morphe-builder/blob/main/CONFIG.md for more detailed explanations
 
+# Revanced
 [YouTube]
-patches-source = "MorpheApp/morphe-patches"
-cli-source = "MorpheApp/morphe-cli"
-rv-brand = "nvbangg"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
+enabled = false
+version = "auto"
+arch = "arm64-v8a"
+included-patches = "'Hide ads' 'Video ads' 'Theme' 'Disable resuming Shorts on startup' 'Remove background playback restrictions' 'GmsCore support' 'Spoof video streams' 'Force original audio' 'Video quality'"
 exclusive-patches = true
-included-patches = "'Bypass URL redirects' 'Disable Shorts resuming on startup' 'Downloads' 'Hide Shorts components' 'Hide ads' 'Open links externally' 'Override YouTube Music actions' 'Playback speed' 'Remove background playback restrictions' 'Sanitize sharing links' 'Shorts autoplay' 'SponsorBlock' 'Swipe controls' 'Video ads' 'Video quality'"
-
-[YouTube-Morphe]
-patches-source = "MorpheApp/morphe-patches"
-cli-source = "MorpheApp/morphe-cli"
-app-name = "youtube"
+archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
 uptodown-dlurl = "https://youtube.en.uptodown.com/android"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 
-[YouTube-ReVanced]
-app-name = "youtube"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
-
-[YouTube-Anddea]
-patches-source = "anddea/revanced-patches"
-cli-source = "MorpheApp/morphe-cli"
-app-name = "youtube"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
-
-[YouTube-Music-Morphe]
-patches-source = "MorpheApp/morphe-patches"
-cli-source = "MorpheApp/morphe-cli"
-app-name = "youtube-music"
+[Music]
+enabled = false
+arch = "arm64-v8a"
+archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
 uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 
-[YouTube-Music-ReVanced]
-app-name = "youtube-music"
-uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
-
-[YouTube-Music-Anddea]
-patches-source = "anddea/revanced-patches"
-cli-source = "MorpheApp/morphe-cli"
-app-name = "youtube-music"
-uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
-
-[Google-Photos]
-patches-source = "RookieEnough/De-ReVanced"
-cli-source = "MorpheApp/morphe-cli"
+[GooglePhotos]
+enabled = false
+build-mode = "apk"
+arch = "arm64-v8a"
+version = "auto"
+included-patches = "'Enable DCIM folders backup control'"
+archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.photos"
 uptodown-dlurl = "https://google-photos.en.uptodown.com/android"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/photos/"
 
-[Instagram-Piko]
-patches-source = "crimera/piko"
-patches-version = "dev"
-cli-source = "MorpheApp/morphe-cli"
-app-name = "instagram"
-uptodown-dlurl = "https://instagram.en.uptodown.com/android"
+[ProtonVPN]
+enabled = false
 arch = "arm64-v8a"
+uptodown-dlurl = "https://protonvpn.en.uptodown.com/android"
+# apkmirror-dlurl = "https://www.apkmirror.com/apk/proton-technologies-ag/protonvpn-secure-and-free-vpn"
 
-[Instagram-ReVanced]
-app-name = "instagram"
-uptodown-dlurl = "https://instagram.en.uptodown.com/android"
-
-[Messenger]
-patches-source = "RookieEnough/De-ReVanced"
-cli-source = "MorpheApp/morphe-cli"
-uptodown-dlurl = "https://facebook-messenger.en.uptodown.com/android"
+[Instagram]
+enabled = false
+version = "auto"
 arch = "arm64-v8a"
+included-patches = "'Hide ads' 'Disable analytics' 'Limit feed to followed profiles' 'Anonymous story viewing' 'Hide suggested content' 'Sanitize sharing links' 'Remove build expired popup'"
+exclusive-patches = true
+uptodown-dlurl = "https://instagram.en.uptodown.com/android"
+# apkmirror-dlurl = "https://www.apkmirror.com/apk/instagram/instagram-instagram"
 
-[TikTok]
-patches-source = "RookieEnough/De-ReVanced"
+# Morphe
+[YouTube-Morphe]
+enabled = true
+app-name = "YouTube"
+rv-brand = "Morphe"
+version = "auto"
+arch = "arm64-v8a"
+# patches-version = "dev"
+patches-source = "MorpheApp/morphe-patches"
 cli-source = "MorpheApp/morphe-cli"
-uptodown-dlurl = "https://tiktok.en.uptodown.com/android"
+patcher-args = "-e 'Theme' -OdarkThemeBackgroundColor=#121212"
+# excluded-patches = "'Custom branding' 'Change header' 'Enable debugging'"
+included-patches = "'Hide ads' 'Video ads' 'Video quality' 'Remove background playback restrictions' 'GmsCore support' 'Force original audio' 'Theme' 'Sanitize sharing links' 'Disable Shorts resuming on startup' 'Disable haptic feedback' 'SponsorBlock' 'Bypass URL redirects' 'Spoof video streams'"
+exclusive-patches = true
+archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
+uptodown-dlurl = "https://youtube.en.uptodown.com/android"
+# apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 
-[Telegram]
-patches-source = "Aunali321/ReVancedExperiments"
-uptodown-dlurl = "https://telegram-google-play-version.en.uptodown.com/android"
-
-[Telegram-Web]
-patches-source = "Aunali321/ReVancedExperiments"
-uptodown-dlurl = "https://telegram.en.uptodown.com/android"
-
-[X-Piko]
-patches-source = "crimera/piko"
-patches-version = "dev"
+[Music-Morphe]
+enabled = false
+app-name = "YT Music"
+rv-brand = "Morphe"
+version = "auto"
+arch = "arm64-v8a"
+patches-source = "MorpheApp/morphe-patches"
 cli-source = "MorpheApp/morphe-cli"
-app-name = "x"
-uptodown-dlurl = "https://twitter.en.uptodown.com/android"
-
-[X-ReVanced]
-app-name = "x"
-uptodown-dlurl = "https://twitter.en.uptodown.com/android"
-
-[Prime-Video]
-patches-source = "hoo-dles/morphe-patches"
-cli-source = "MorpheApp/morphe-cli"
-uptodown-dlurl = "https://amazon-video.en.uptodown.com/android"
-
-[Disney]
-patches-source = "RookieEnough/De-ReVanced"
-cli-source = "MorpheApp/morphe-cli"
-uptodown-dlurl = "https://disney-disneyplus.en.uptodown.com/android"
-
-[WPS-Office]
-patches-source = "hoo-dles/morphe-patches"
-cli-source = "MorpheApp/morphe-cli"
-uptodown-dlurl = "https://wps-office.en.uptodown.com/android"
-version = "18.12.1"
-
-[Duolingo]
-patches-source = "hoo-dles/morphe-patches"
-cli-source = "MorpheApp/morphe-cli"
-uptodown-dlurl = "https://duolingo.en.uptodown.com/android"
-
-[Cake]
-patches-source = "hoo-dles/morphe-patches"
-cli-source = "MorpheApp/morphe-cli"
-uptodown-dlurl = "https://me-mycake.en.uptodown.com/android"
-
-[Twitch]
-uptodown-dlurl = "https://twitch.en.uptodown.com/android"
+excluded-patches = "'Theme' 'Custom branding' 'Enable debugging' 'Change header'"
+archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
+uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
+# apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 
 [Reddit-Morphe]
+enabled = false
+app-name = "Reddit"
+rv-brand = "Morphe"
+version = "auto"
+arch = "arm64-v8a"
 patches-source = "MorpheApp/morphe-patches"
 cli-source = "MorpheApp/morphe-cli"
-app-name = "reddit"
+archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.reddit.frontpage"
 uptodown-dlurl = "https://reddit-official-app.en.uptodown.com/android"
+# apkmirror-dlurl = "https://www.apkmirror.com/apk/redditinc/reddit/"
+dpi = "120-640dpi"
 
-[Reddit-Anddea]
-patches-source = "anddea/revanced-patches"
-cli-source = "MorpheApp/morphe-cli"
-app-name = "reddit"
-uptodown-dlurl = "https://reddit-official-app.en.uptodown.com/android"
-
-[Amazon-Shopping]
-patches-source = "RookieEnough/De-ReVanced"
-cli-source = "MorpheApp/morphe-cli"
-uptodown-dlurl = "https://amazon-shopping.en.uptodown.com/android"
-
-[Google-News] 
-patches-source = "RookieEnough/De-ReVanced"
-cli-source = "MorpheApp/morphe-cli"
-uptodown-dlurl = "https://google-play-newsstand.en.uptodown.com/android"
-
-[Gboard]
-patches-source = "jkennethcarino/adobo"
-cli-source = "MorpheApp/morphe-cli"
-uptodown-dlurl = "https://gboard-go.en.uptodown.com/android"
+# Piko
+[Twitter]
+enabled = false
+version = "auto"
 arch = "arm64-v8a"
-
-[Google-Recorder]
-patches-source = "RookieEnough/De-ReVanced"
+included-patches = "'Remove Ads' 'Remove premium upsell' 'Disable auto timeline scroll on launch' 'Native downloader' 'Hide Banner' 'No shortened URL' 'Clear tracking params'"
+exclusive-patches = true
+patches-source = "crimera/piko"
 cli-source = "MorpheApp/morphe-cli"
-uptodown-dlurl = "https://opnemer.en.uptodown.com/android"
+uptodown-dlurl = "https://twitter.en.uptodown.com/android"
+# apkmirror-dlurl = "https://www.apkmirror.com/apk/x-corp/twitter"
+
+[Instagram-Piko]
+enabled = false
 arch = "arm64-v8a"
-
-[Photomath]
-patches-source = "RookieEnough/De-ReVanced"
+app-name = "Instagram"
+patches-version = "dev"
+patches-source = "crimera/piko"
 cli-source = "MorpheApp/morphe-cli"
-uptodown-dlurl = "https://photomath.en.uptodown.com/android"
+# included-patches = "'Hide ads' 'Disable analytics' 'Limit feed to following profiles' 'View stories anonymously' 'View live anonymously' 'Hide suggested content' 'Download media' 'Add settings' 'Sanitize share links' 'Remove build expired popup'"
+# exclusive-patches = true
+uptodown-dlurl = "https://instagram.en.uptodown.com/android"
 
-[SoundCloud-HooDles]
-patches-source = "hoo-dles/morphe-patches"
-cli-source = "MorpheApp/morphe-cli"
-app-name = "soundcloud"
-uptodown-dlurl = "https://soundcloud.en.uptodown.com/android"
-
-[SoundCloud-DeReVanced]
-patches-source = "RookieEnough/De-ReVanced"
-cli-source = "MorpheApp/morphe-cli"
-app-name = "soundcloud"
-uptodown-dlurl = "https://soundcloud.en.uptodown.com/android"
-
-[Pandora]
-patches-source = "hoo-dles/morphe-patches"
-cli-source = "MorpheApp/morphe-cli"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/pandora/pandora-music-podcasts/"
-archive-dlurl = "https://archive.org/download/nvbangg-apks/com.pandora.android/"
-
-[Tumblr]
-patches-source = "RookieEnough/De-ReVanced"
-cli-source = "MorpheApp/morphe-cli"
-uptodown-dlurl = "https://tumblr.en.uptodown.com/android"
-
-[Cricbuzz]
-patches-source = "RookieEnough/De-ReVanced"
-cli-source = "MorpheApp/morphe-cli"
-uptodown-dlurl = "https://cricbuzz-cricket-scores-and-news.en.uptodown.com/android"
-
-[MyFitnessPal]
-patches-source = "hoo-dles/morphe-patches"
-cli-source = "MorpheApp/morphe-cli"
-uptodown-dlurl = "https://calorie-counter-myfitnesspal.en.uptodown.com/android"
-
-[Strava]
-patches-source = "RookieEnough/De-ReVanced"
-cli-source = "MorpheApp/morphe-cli"
-uptodown-dlurl = "https://strava.en.uptodown.com/android"
-
-[Crunchyroll]
-uptodown-dlurl = "https://crunchyroll.en.uptodown.com/android"
-
-[KakaoTalk]
-patches-source = "AmpleReVanced/revanced-patches"
-cli-source = "MorpheApp/morphe-cli"
-uptodown-dlurl = "https://kakaotalk.en.uptodown.com/android"
-
-[Wallcraft]
-patches-source = "hoo-dles/morphe-patches"
-cli-source = "MorpheApp/morphe-cli"
-uptodown-dlurl = "https://wallpaperscraft.en.uptodown.com/android"
-
-[ibis-Paint-X]
-patches-source = "hoo-dles/morphe-patches"
-cli-source = "MorpheApp/morphe-cli"
-uptodown-dlurl = "https://ibispaint-x.en.uptodown.com/android"
-build-mode = "apk"
-arch = "arm64-v8a" 
-
-[RAR]
-patches-source = "RookieEnough/De-ReVanced"
-cli-source = "MorpheApp/morphe-cli"
-uptodown-dlurl = "https://rar-for-android.en.uptodown.com/android"
-
-[Busuu]
-patches-source = "hoo-dles/morphe-patches"
-cli-source = "MorpheApp/morphe-cli"
-uptodown-dlurl = "https://busuu.en.uptodown.com/android"
-
-[Peacock-TV]
-patches-source = "RookieEnough/De-ReVanced"
-cli-source = "MorpheApp/morphe-cli"
-uptodown-dlurl = "https://peacock-tv.en.uptodown.com/android"
-
-[Sofascore]
-patches-source = "hoo-dles/morphe-patches"
-cli-source = "MorpheApp/morphe-cli"
-uptodown-dlurl = "https://sofascore.en.uptodown.com/android"
-
-[Windy]
-patches-source = "hoo-dles/morphe-patches"
-cli-source = "MorpheApp/morphe-cli"
-uptodown-dlurl = "https://windy-wind-waves-and-hurricanes-forecast.en.uptodown.com/android"
-
-[Proton-VPN]
-patches-source = "hoo-dles/morphe-patches"
-cli-source = "MorpheApp/morphe-cli"
-uptodown-dlurl = "https://protonvpn.en.uptodown.com/android"
+# Revanced Experiment
+[Telegram-Web]
+enabled = false
+version = "auto"
+arch = "arm64-v8a"
+patches-source = "Aunali321/ReVancedExperiments"
+excluded-patches = "'Unlock Pro'"
+uptodown-dlurl = "https://telegram.en.uptodown.com/android"
+# apkmirror-dlurl = "https://www.apkmirror.com/apk/telegram-fz-llc/telegram-web-version/"
