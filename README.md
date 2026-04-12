@@ -595,20 +595,19 @@ Patches: [Aunali321/patches-2.0.0.rvp](https://github.com/Aunali321/ReVancedExpe
 [**Web version:**](https://telegram.org/android)
 
 <details>
-<summary id="Telegram-Web">&emsp;<a href="../../releases/download/43/telegram-web-aunali321-v12.6.3-arm64-v8a.apk"><img src="https://img.shields.io/badge/Telegram_Web-v12.6.3-gray?labelColor=2CA5E0&logo=telegram&logoColor=white"></a></summary>
+<summary id="Telegram-Web">&emsp;<a href="../../releases/download/2/telegram-web-aunali321-v12.6.4-arm64-v8a.apk"><img src="https://img.shields.io/badge/Telegram_Web-v12.6.4-gray?labelColor=2CA5E0&logo=telegram&logoColor=white"></a></summary>
 
 Other variants:      
 [arm-v7a.apk](../../releases/download/43/telegram-web-aunali321-v12.6.3-arm-v7a.apk) • [arm64-v8a.zip](../../releases/download/43/telegram-web-aunali321-module-v12.6.3-arm64-v8a.zip) • [arm-v7a.zip](../../releases/download/43/telegram-web-aunali321-module-v12.6.3-arm-v7a.zip)
 <blockquote>
 
-[Release 2026-04-07](../../releases/tag/43)<br>
+[Release 2026-04-12](../../releases/tag/2)<br>
 Patches: [Aunali321/patches-2.0.0.rvp](https://github.com/Aunali321/ReVancedExperiments/releases/tag/v2.0.0)
 - Bypass Integrity
 - Disable Auto Update
 - Download Speed Boost
 - Hide sponsored ads
 - Hide typing indicator
-- Unlock Pro
 </blockquote>
 </details>
 
