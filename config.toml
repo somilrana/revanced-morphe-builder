@@ -47,7 +47,7 @@ uptodown-dlurl = "https://instagram.en.uptodown.com/android"
 
 # Morphe
 [YouTube-Morphe]
-enabled = true
+enabled = false
 app-name = "YouTube"
 rv-brand = "Morphe"
 version = "auto"
@@ -114,7 +114,7 @@ uptodown-dlurl = "https://instagram.en.uptodown.com/android"
 
 # Revanced Experiment
 [Telegram-Web]
-enabled = false
+enabled = true
 version = "auto"
 arch = "arm64-v8a"
 patches-source = "Aunali321/ReVancedExperiments"
