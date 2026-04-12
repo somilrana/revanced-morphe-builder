@@ -1,5 +1,5 @@
-YouTube-Morphe (arm64-v8a): 20.45.36  
+Telegram-Web (arm64-v8a): 12.6.4  
 
   
-Patches: MorpheApp/patches-1.23.0.mpp  
-[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.23.0)  
+Patches: Aunali321/patches-2.0.0.rvp  
+[Changelog](https://github.com/Aunali321/ReVancedExperiments/releases/tag/v2.0.0)  
