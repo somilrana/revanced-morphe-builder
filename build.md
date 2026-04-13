@@ -1,5 +1,5 @@
-Telegram-Web (arm64-v8a): 12.6.4  
+Instagram-Piko (arm64-v8a): 423.0.0.47.66  
 
   
-Patches: Aunali321/patches-2.0.0.rvp  
-[Changelog](https://github.com/Aunali321/ReVancedExperiments/releases/tag/v2.0.0)  
+Patches: crimera/patches-3.2.0-dev.5.mpp  
+[Changelog](https://github.com/crimera/piko/releases/tag/v3.2.0-dev.5)  
