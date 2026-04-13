@@ -476,13 +476,13 @@ Patches: [RookieEnough/patches-1.0.3.mpp](https://github.com/RookieEnough/De-ReV
 ### [Instagram](https://play.google.com/store/apps/details?id=com.instagram.android)
 
 <details>
-<summary id="Instagram-Piko">&emsp;<a href="../../releases/download/45/instagram-crimera-v423.0.0.47.66-arm64-v8a.apk"><img src="https://img.shields.io/badge/Piko-v423.0.0.47.66-gray?labelColor=E4405F&logo=Instagram&logoColor=white"></a></summary>
+<summary id="Instagram-Piko">&emsp;<a href="../../releases/download/3/instagram-crimera-v423.0.0.47.66-arm64-v8a.apk"><img src="https://img.shields.io/badge/Piko-v423.0.0.47.66-gray?labelColor=E4405F&logo=Instagram&logoColor=white"></a></summary>
 
 Other variants:      
 [arm64-v8a.zip](../../releases/download/45/instagram-crimera-module-v423.0.0.47.66-arm64-v8a.zip)
 <blockquote>
 
-[Release 2026-04-09](../../releases/tag/45)<br>
+[Release 2026-04-13](../../releases/tag/3)<br>
 Patches: [crimera/patches-3.2.0-dev.5.mpp](https://github.com/crimera/piko/releases/tag/v3.2.0-dev.5)
 - Add settings
 - Change version code
