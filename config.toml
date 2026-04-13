@@ -102,19 +102,17 @@ uptodown-dlurl = "https://twitter.en.uptodown.com/android"
 # apkmirror-dlurl = "https://www.apkmirror.com/apk/x-corp/twitter"
 
 [Instagram-Piko]
-enabled = false
+enabled = true
 arch = "arm64-v8a"
 app-name = "Instagram"
 patches-version = "dev"
 patches-source = "crimera/piko"
 cli-source = "MorpheApp/morphe-cli"
-# included-patches = "'Hide ads' 'Disable analytics' 'Limit feed to following profiles' 'View stories anonymously' 'View live anonymously' 'Hide suggested content' 'Download media' 'Add settings' 'Sanitize share links' 'Remove build expired popup'"
-# exclusive-patches = true
 uptodown-dlurl = "https://instagram.en.uptodown.com/android"
 
 # Revanced Experiment
 [Telegram-Web]
-enabled = true
+enabled = false
 version = "auto"
 arch = "arm64-v8a"
 patches-source = "Aunali321/ReVancedExperiments"
